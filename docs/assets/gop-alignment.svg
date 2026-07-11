@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-label="GOP 关键帧对齐示意">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAFCFF"/>
+      <stop offset="1" stop-color="#F0F8FB"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#153B52" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#1B8EA5"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="760" rx="34" fill="url(#bg)"/>
+  <text x="100" y="104" fill="#0F2430" font-size="42" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">GOP 对齐：用可复制边界换导出速度</text>
+  <text x="100" y="150" fill="#5A717B" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">用户点位不一定是安全切点，LiteCut 把它移动到附近关键帧范围</text>
+
+  <g transform="translate(110 245)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1220" height="260" rx="24" fill="#FFFFFF" stroke="#D8E6EC"/>
+    <line x1="70" y1="138" x2="1145" y2="138" stroke="#D4E3EB" stroke-width="8" stroke-linecap="round"/>
+    <g font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif" font-size="18">
+      <circle cx="95" cy="138" r="18" fill="#13B98F"/>
+      <text x="95" y="98" text-anchor="middle" fill="#0F6756" font-weight="700">I</text>
+      <text x="95" y="190" text-anchor="middle" fill="#54707A">关键帧</text>
+
+      <circle cx="185" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="185" y="98" text-anchor="middle" fill="#6A7D86">P</text>
+      <circle cx="275" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="275" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+      <circle cx="365" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="365" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+
+      <circle cx="455" cy="138" r="18" fill="#13B98F"/>
+      <text x="455" y="98" text-anchor="middle" fill="#0F6756" font-weight="700">I</text>
+      <text x="455" y="190" text-anchor="middle" fill="#54707A">关键帧</text>
+
+      <circle cx="545" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="545" y="98" text-anchor="middle" fill="#6A7D86">P</text>
+      <circle cx="635" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="635" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+      <circle cx="725" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="725" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+
+      <circle cx="815" cy="138" r="18" fill="#13B98F"/>
+      <text x="815" y="98" text-anchor="middle" fill="#0F6756" font-weight="700">I</text>
+      <text x="815" y="190" text-anchor="middle" fill="#54707A">关键帧</text>
+
+      <circle cx="905" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="905" y="98" text-anchor="middle" fill="#6A7D86">P</text>
+      <circle cx="995" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="995" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+      <circle cx="1085" cy="138" r="13" fill="#B8CBD5"/>
+      <text x="1085" y="98" text-anchor="middle" fill="#6A7D86">B</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">
+    <line x1="650" y1="210" x2="650" y2="430" stroke="#FF8A3D" stroke-width="4" stroke-dasharray="10 8"/>
+    <text x="650" y="205" text-anchor="middle" fill="#D4601C" font-size="22" font-weight="700">用户点击点</text>
+    <path d="M650 540 C690 585 750 585 815 520" stroke="#1B8EA5" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+    <text x="730" y="630" text-anchor="middle" fill="#1B6475" font-size="24" font-weight="700">导出边界对齐到附近关键帧</text>
+  </g>
+
+  <g transform="translate(280 635)">
+    <rect x="0" y="0" width="880" height="58" rx="18" fill="#E8F6F3" stroke="#BCE4DB"/>
+    <text x="440" y="38" text-anchor="middle" fill="#0F6756" font-size="24" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">用户感知：边界粗一点。系统收益：不重编码，导出快很多。</text>
+  </g>
+</svg>
+

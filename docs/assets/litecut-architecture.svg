@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-label="LiteCut Android 架构图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFDFF"/>
+      <stop offset="1" stop-color="#F2FAF7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#143B4A" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#25839B"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="760" rx="34" fill="url(#bg)"/>
+  <text x="100" y="104" fill="#0F2430" font-size="42" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">LiteCut Android 架构：只保留必要复杂度</text>
+  <text x="100" y="150" fill="#5A717B" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">预览、时间线、探测、导出各司其职，核心合同是 stream copy</text>
+
+  <g filter="url(#shadow)" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="100" y="235" width="240" height="120" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="220" y="288" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">系统选择器</text>
+    <text x="220" y="324" text-anchor="middle" fill="#5A717B" font-size="18">URI + 权限</text>
+
+    <rect x="420" y="205" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="550" y="258" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">即时预览</text>
+    <text x="550" y="294" text-anchor="middle" fill="#5A717B" font-size="18">ExoPlayer + TextureView</text>
+
+    <rect x="420" y="375" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="550" y="428" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">本地 workspace</text>
+    <text x="550" y="464" text-anchor="middle" fill="#5A717B" font-size="18">后台复制源文件</text>
+
+    <rect x="760" y="205" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="890" y="258" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">TimelineProject</text>
+    <text x="890" y="294" text-anchor="middle" fill="#5A717B" font-size="18">片段 + 时间映射</text>
+
+    <rect x="760" y="375" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="890" y="428" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">Probe + Thumbnail</text>
+    <text x="890" y="464" text-anchor="middle" fill="#5A717B" font-size="18">关键帧 + 稀疏缩略图</text>
+
+    <rect x="1100" y="292" width="260" height="135" rx="20" fill="#EAF8F5" stroke="#BDE6DC"/>
+    <text x="1230" y="348" text-anchor="middle" fill="#0F6756" font-size="24" font-weight="760">ExportPlanner</text>
+    <text x="1230" y="385" text-anchor="middle" fill="#2F6F67" font-size="18">FFmpegKit 执行</text>
+  </g>
+
+  <path d="M345 295 H390" stroke="#25839B" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M345 315 C380 390 385 420 405 435" stroke="#25839B" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M685 265 H735" stroke="#25839B" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M685 435 H735" stroke="#25839B" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1025 265 C1080 280 1085 320 1095 345" stroke="#25839B" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1025 435 C1080 420 1085 390 1095 370" stroke="#25839B" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+
+  <g transform="translate(250 590)" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="0" y="0" width="940" height="72" rx="20" fill="#FFFFFF" stroke="#D6E6ED"/>
+    <text x="470" y="45" text-anchor="middle" fill="#0F2430" font-size="24" font-weight="760">核心合同：导出计划不得加入重编码、滤镜、缩放或帧级处理</text>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-label="LiteCut 快剪核心 idea">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF7F6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2AA7FF"/>
+      <stop offset="1" stop-color="#13B98F"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0F3A4A" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#2F7A8A"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="760" rx="34" fill="url(#bg)"/>
+  <g opacity="0.5" stroke="#C7DCE8" stroke-width="1">
+    <path d="M120 120 H1320"/>
+    <path d="M120 220 H1320"/>
+    <path d="M120 320 H1320"/>
+    <path d="M120 420 H1320"/>
+    <path d="M120 520 H1320"/>
+    <path d="M120 620 H1320"/>
+  </g>
+  <text x="110" y="112" fill="#0F2430" font-size="44" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">LiteCut 快剪逻辑</text>
+  <text x="110" y="158" fill="#54707A" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">长视频场景下，把价值从“帧精确”切换到“快速导出”</text>
+
+  <g filter="url(#shadow)">
+    <rect x="110" y="245" width="300" height="190" rx="22" fill="#FFFFFF" stroke="#D8E7EE"/>
+    <rect x="570" y="245" width="300" height="190" rx="22" fill="#FFFFFF" stroke="#D8E7EE"/>
+    <rect x="1030" y="245" width="300" height="190" rx="22" fill="#FFFFFF" stroke="#D8E7EE"/>
+  </g>
+
+  <text x="150" y="305" fill="#0F2430" font-size="28" font-weight="700" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">用户真实需求</text>
+  <text x="150" y="350" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">长视频基础整理</text>
+  <text x="150" y="386" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">边界差 1-2 秒可接受</text>
+
+  <text x="610" y="305" fill="#0F2430" font-size="28" font-weight="700" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">工程取舍</text>
+  <text x="610" y="350" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">对齐关键帧 / GOP</text>
+  <text x="610" y="386" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">避免默认重编码</text>
+
+  <text x="1070" y="305" fill="#0F2430" font-size="28" font-weight="700" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">产品结果</text>
+  <text x="1070" y="350" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">stream copy 导出</text>
+  <text x="1070" y="386" fill="#526A76" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">速度优先，够用就好</text>
+
+  <path d="M430 340 H540" stroke="#2F7A8A" stroke-width="5" marker-end="url(#arrow)" fill="none"/>
+  <path d="M890 340 H1000" stroke="#2F7A8A" stroke-width="5" marker-end="url(#arrow)" fill="none"/>
+
+  <rect x="350" y="535" width="740" height="90" rx="20" fill="url(#accent)" opacity="0.95"/>
+  <text x="720" y="592" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">不是小剪映，是长视频快剪工具</text>
+</svg>
+

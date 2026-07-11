@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-label="OpenSpec 开发闭环">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9FCFF"/>
+      <stop offset="1" stop-color="#EFF7FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#183B66" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#2E75B6"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="760" rx="34" fill="url(#bg)"/>
+  <text x="100" y="105" fill="#0F2430" font-size="42" font-weight="760" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">OpenSpec 不是文档负担，是开发刹车和方向盘</text>
+  <text x="100" y="150" fill="#5A717B" font-size="22" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">每个 change 都先锁定目标、非目标、任务和验收，防止 MVP 膨胀</text>
+
+  <g filter="url(#shadow)" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="130" y="275" width="250" height="145" rx="22" fill="#FFFFFF" stroke="#D5E5EF"/>
+    <text x="255" y="330" text-anchor="middle" fill="#0F2430" font-size="28" font-weight="760">Explore</text>
+    <text x="255" y="372" text-anchor="middle" fill="#5A717B" font-size="20">想清楚取舍</text>
+
+    <rect x="455" y="275" width="250" height="145" rx="22" fill="#FFFFFF" stroke="#D5E5EF"/>
+    <text x="580" y="330" text-anchor="middle" fill="#0F2430" font-size="28" font-weight="760">Propose</text>
+    <text x="580" y="372" text-anchor="middle" fill="#5A717B" font-size="20">写目标和非目标</text>
+
+    <rect x="780" y="275" width="250" height="145" rx="22" fill="#FFFFFF" stroke="#D5E5EF"/>
+    <text x="905" y="330" text-anchor="middle" fill="#0F2430" font-size="28" font-weight="760">Apply</text>
+    <text x="905" y="372" text-anchor="middle" fill="#5A717B" font-size="20">按任务实现</text>
+
+    <rect x="1105" y="275" width="250" height="145" rx="22" fill="#FFFFFF" stroke="#D5E5EF"/>
+    <text x="1230" y="330" text-anchor="middle" fill="#0F2430" font-size="28" font-weight="760">Verify</text>
+    <text x="1230" y="372" text-anchor="middle" fill="#5A717B" font-size="20">测试和真机验证</text>
+  </g>
+
+  <path d="M385 348 H430" stroke="#2E75B6" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M710 348 H755" stroke="#2E75B6" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1035 348 H1080" stroke="#2E75B6" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(160 525)" font-family="Inter, Noto Sans SC, Microsoft YaHei, sans-serif">
+    <rect x="0" y="0" width="1120" height="95" rx="22" fill="#EAF5FF" stroke="#C6DEF7"/>
+    <text x="42" y="38" fill="#19527D" font-size="22" font-weight="760">LiteCut 的三个 change</text>
+    <text x="42" y="72" fill="#466B80" font-size="20">litecut-mvp -> android-editor-timeline-ui -> android-preview-timeline-polish</text>
+    <text x="780" y="55" fill="#0F6756" font-size="20" font-weight="700">每一步都保留快剪边界</text>
+  </g>
+</svg>
+
