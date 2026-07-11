@@ -1,0 +1,22 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# OS / local debug
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Media/debug artifacts
+*.mp4
+*.mov
+*.mkv
+*.jpg
+*.png
+
